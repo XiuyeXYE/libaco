@@ -16,6 +16,8 @@ OUTPUT_DIR="./output"
 CFLAGS="-g -O2 -Wall -Werror"
 #EXTRA_CFLAGS=""
 OUTPUT_SUFFIX=""
+CC="g++"
+
 makecc="cc"
 if [ "$CC" ]
 then

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#define _GNU_SOURCE
+// #define _GNU_SOURCE
 
 #include "aco.h"    
 #include <alloca.h>
@@ -30,7 +30,7 @@ void co_fp_alloca(){
     size_t sz = (size_t)((uintptr_t)aco_get_arg());
     uint8_t* ptr = NULL;
     assert(sz > 0);
-    ptr = alloca(sz);
+    ptr = (uint8_t*)alloca(sz);
     assertptr(ptr);
     memset(ptr, 0, sz);
     while(1){

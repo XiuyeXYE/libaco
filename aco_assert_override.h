@@ -27,6 +27,7 @@ extern "C" {
 #define assertptr(ptr)          aco_assertptr(ptr)
 #define assertalloc_bool(b)     aco_assertalloc_bool(b)
 #define assertalloc_ptr(ptr)    aco_assertalloc_ptr(ptr)
+#define _Static_assert static_assert
 
 #ifdef __cplusplus
 }
